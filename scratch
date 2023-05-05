@@ -1,0 +1,15 @@
+# Get info on specific library
+osxphotos info --library "/Volumes/PHOTOS/iPhoto/Old Photos.photoslibrary" 
+
+# Export OLD Library
+osxphotos export "/Volumes/Backup/iPhoto OLD" --export-by-date --touch-file --download-missing --update --library "/Volumes/PHOTOS/iPhoto/Old Photos.photoslibrary" 
+
+# Useful Links
+https://www.reddit.com/r/ApplePhotos/comments/12zbsbj/backup_photos_to_external_hard_drive_with/
+https://www.reddit.com/r/ApplePhotos/comments/z81rgn/backing_up_photos_library_to_archival_disks/
+
+# Commands
+--export-by-date: export into a folder structure of YYYY-MM-DD (you can fully customize the export structure using the --directory option, see the help)
+--touch-file: Touch (update) the file's date/time to match the actual date the photo was taken, not the date it was exported.
+--download-missing: Download any missing photos from iCloud
+--update: The first time you run the command this does nothing but if you run the command again, it will export only any new/modified photos, not the whole thing again.
