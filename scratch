@@ -1,8 +1,11 @@
 # Get info on specific library
 osxphotos info --library "/Volumes/PHOTOS/iPhoto/Old Photos.photoslibrary" 
+osxphotos info --library "/Volumes/ORICO SSD 500GB/Old Photos.photoslibrary"
 
 # Export OLD Library
 osxphotos export "/Volumes/Backup/iPhoto OLD" --directory "{folder_album}" --touch-file --download-missing --update --library "/Volumes/PHOTOS/iPhoto/Old Photos.photoslibrary" --retry 3 --report allphotos.csv
+
+osxphotos export "/Volumes/Backup/iPhotoTest" --directory "{folder_album}" --touch-file --download-missing --update --library "/Volumes/ORICO SSD 500GB/Old Photos.photoslibrary" --retry 3 --report allphotos.csv
 
 # Useful Links
 https://github.com/RhetTbull/osxphotos#tutorial
