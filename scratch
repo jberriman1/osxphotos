@@ -2,14 +2,14 @@
 osxphotos info --library "/Volumes/PHOTOS/iPhoto/Old Photos.photoslibrary" 
 osxphotos info --library "/Volumes/ORICO SSD 500GB/Old Photos.photoslibrary"
 
-# Export OLD Library
-osxphotos export "/Volumes/Backup/iPhoto OLD" --directory "{folder_album}" --touch-file --download-missing --update --library "/Volumes/PHOTOS/iPhoto/Old Photos.photoslibrary" --retry 3 --report allphotos.csv --ramdb
+## Library
+osxphotos export "/Volumes/Backup/iPhoto/Jason" --library "/Volumes/SSD4TB/iPhoto/Jason/Photos Library.photoslibrary" --directory "{folder_album}" --touch-file --download-missing --update --retry 3 --report allphotos.csv
 
-# Works... OLD Library
-osxphotos export "/Volumes/Backup/iPhoto/Jason_Old" --library "/Volumes/SSD500GB/iPhoto/Jason_Old/Old Photos.photoslibrary" --directory "{folder_album}" --touch-file --download-missing --update --retry 3 --report allphotos.csv --alt-copy 
+## OLD Library
+osxphotos export "/Volumes/Backup/iPhoto/Jason_Old" --library "/Volumes/SSD4TB/iPhoto/JasonOld/Old Photos.photoslibrary" --directory "{folder_album}" --touch-file --download-missing --update --retry 3 --report allphotos.csv --alt-copy 
 
 ## Ann Mum Library
-osxphotos export "/Volumes/Backup/iPhoto/Ann_Mum" --library "/Volumes/SSD500GB/iPhoto/Ann/Photos Library.photoslibrary" --directory "{folder_album}" --touch-file --download-missing --update --retry 3 --report allphotos.csv --alt-copy 
+osxphotos export "/Volumes/Backup/iPhoto/Ann_Mum" --library "/Volumes/SSD4TB/iPhoto/Ann/Photos Library.photoslibrary" --directory "{folder_album}" --touch-file --download-missing --update --retry 3 --report allphotos.csv --alt-copy 
 
 ## Jenny Library
 osxphotos export "/Volumes/Backup/iPhoto/Jenny" --directory "{folder_album}" --touch-file --download-missing --update --retry 3 --report allphotos.csv --alt-copy 
